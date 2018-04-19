@@ -150,7 +150,8 @@
                         .attr("cy", function(d, i) { return positions[i][1]; })
                         .attr("r", function(d, i) { return Math.log(Airport_count[d.iata]); })
                         .sort(function(a, b) { return countByAirport[b.iata] - countByAirport[a.iata]; })
-                        .attr("fill", "orange")
+                        .attr("fill", "purple")
+                        .attr("stroke", "pink")
                         .attr('opacity', opacityCircle);
                 });
             });
